@@ -7,3 +7,4 @@ from .cp_als import cp_als
 from .mcp_als import mcp_als
 from .ncp_hals import ncp_hals
 from .ncp_bcd import ncp_bcd
+from .mncp_hals import mncp_hals
