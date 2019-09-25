@@ -183,7 +183,7 @@ def plot_factors(U, plots='line', fig=None, axes=None, scatter_kw=dict(),
 
     # if figure is passed, identify axes
     else:
-        axes = np.array(fig.get_axes(), dtype=object).reshape(U.rank, U.ndim)
+        axes = np.array(fig.get_axes(), dtype=object).reshape(U.rank, -1)  # -1 KLM
 
     # main loop, plot each factor
     plot_obj = np.empty((U.rank, U.ndim), dtype=object)
